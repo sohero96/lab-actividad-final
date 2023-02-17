@@ -1,0 +1,97 @@
+
+
+/* -----------------------------------------------------------
+
+        ESTILO CSS PARA LAB FINAL
+
+ ----------------------------------------------------------- */
+/* FUENTE IMPORTADA: font-family: 'Poppins', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: left;
+    justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: #242933;
+}
+form{
+    border: 1px solid #acbae1;
+    background-color: #2f3644;
+    width: 20%;
+    border-radius: 5px;
+
+    margin-top: 150px;
+    padding: 50px;
+}
+ .btn-submit{
+    text-align: center;
+    margin:  15px 0;  
+}
+.campoFormulario{
+    text-align: left;
+    margin:  15px 0;  
+
+}
+
+h1{
+    color: #acbae1;
+    font-size: 1.7em;
+    font-weight: 600;
+
+}
+
+label{
+    display: block;
+    color: #858fb0;
+
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline;
+
+}
+
+.btn-submit input{
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: #6c63ff;
+    color: white;
+    
+}
+
+.correcto{
+    border: 5px solid #4eca64;
+    background-image: url(images/success-icon.svg);
+    background-repeat: no-repeat ;
+    background-position: center right;
+}
+
+.incorrecto{
+    border: 5px solid #ff0000;
+    background-image: url(images/error-icon.svg);
+    background-repeat: no-repeat ;
+    background-position: center right;
+}
+
+  
+  #formularioerror0, #formularioerror1, #formularioerror2, #formularioerror3, #mal{
+    display: none;
+}
+
+ #error-email, #error-nombre, #error-contrasena, #error-contrasena-repetida{
+    display: none;
+}   
+.error,.formulario-error, .mal{
+    color: red;
+ 
+}
+

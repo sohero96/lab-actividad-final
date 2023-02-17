@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab final - formulario </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+
+    <!-- formulario creación de cuenta -->
+    <form action="http://cgi.dominio.es/FormMail.pl" method="post" name="formulario"  id="formulario" enctype="multipart/form-data" novalidate>
+        <h1>Create account</h1>
+
+    <!-- nombre -->
+    <div class="campoFormulario" id="grupo_nombre">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="formulario-input "  name="nombre" id="nombre" >
+        <p class="error" id="error-nombre">Nombre inválido</p>
+        <p class="formulario-error" id="formularioerror0" name="msjError">Rellena el campo</p>
+    </div>
+
+    <!-- email -->
+    <div class="campoFormulario" id="grupo_email">
+        <label for="email">Email</label>
+        <input type="email" name="email-usuario" id="email" class="formulario-input">
+        <p class="error" id="error-email">Email inválido</p>
+        <p class="formulario-error" id="formularioerror1" name="msjError">Rellena el campo</p>
+    </div> 
+       
+
+   
+ <div class="campoFormulario" id="grupo_contrasena">
+        <label for="contrasena">Clave</label>
+        <input type="password" name="contrasena-usuario" id="contrasena"  class="formulario-input ">
+        <p class="error" id="error-contrasena">No debe tener más de 8 caracteres</p>
+        <p class="formulario-error" id="formularioerror2" name="msjError">Rellena el campo</p>
+
+    </div>
+
+
+    <div class="campoFormulario" id="grupo_contrasenaRepetida">
+        <label for="contrasenaRepetida">Confirme su clave</label>
+        <input type="password" name="contrasena-usuarioRepetida-repetida" id="contrasenaRepetida"  class="formulario-input ">
+        <p class="error" id="error-contrasena-repetida">No debe tener más de 8 caracteres</p>
+        <p class="formulario-error" id="formularioerror3" name="msjError">Rellena el campo</p>
+        <p class="mal" id="mal">Las contraseñas no coinciden </p>
+
+
+    </div>
+
+    <!-- Botón de enviar -->
+    <div class="btn-submit">
+     <input id="envio" type="submit" value="Enviar">
+    </div>
+
+
+
+    </form>
+
+     <!-- js -->
+     <script src="index.js"></script>
+    
+</body>
+</html>
